@@ -74,6 +74,24 @@ h1 {
   font-weight: 600;
 }
 
+/* page content styles */
+
+.page-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.page-section {
+  width: 100%;
+  margin-bottom: 4%
+}
+
+.page-section img {
+  width: 100%;
+  height: auto;
+
+}
+
 /* Responsive styles */
 
 /* small screens/mobile */
@@ -117,27 +135,38 @@ h1 {
     padding-right: 1.5rem;
   }
 
-}
+  /* page styles */
+  .page-section img {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: auto;
 
-/* on medium screens/tablets  */
-@media only screen and (min-width: 768px) {
-
-  /* navigation styles */
-  .navbar {
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
   }
 
-  /* hero styles */
-  .hero-banner {
-    height: 5.5rem;
-  }
-
-  .hero-title {
-    font-size: 2rem;
-    font-weight: 800;
-    padding-right: 2rem;
+  .page-section h2 {
+    text-align: center;
   }
 }
+  /* on medium screens/tablets  */
+  @media only screen and (min-width: 768px) {
+
+    /* navigation styles */
+    .navbar {
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+    }
+
+    /* hero styles */
+    .hero-banner {
+      height: 5.5rem;
+    }
+
+    .hero-title {
+      font-size: 2rem;
+      font-weight: 800;
+      padding-right: 2rem;
+    }
+  }
