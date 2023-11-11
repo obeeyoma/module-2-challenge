@@ -92,6 +92,79 @@ h1 {
 
 }
 
+.about-info,
+.portfolio-gallery,
+.network {
+  margin: auto;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.page-section h2 {
+  text-align: center;
+}
+
+figure {
+  position: relative;
+}
+
+figure img {
+  display: block;
+}
+
+.box {
+  margin: 5px;
+  border: 1px solid purple;
+}
+
+.box1 {
+  height: 40%;
+}
+
+.row {
+  width: 100%;
+}
+
+.about-info figure {
+  /* width: 90%; */
+  margin: auto;
+}
+
+.box1 img {
+  height: 100%;
+}
+
+figcaption {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  z-index: 2;
+  background-color: aqua;
+  padding: 1%;
+}
+
+.overlay {
+  background-color: crimson;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.overlay:hover {
+  opacity: 0;
+}
+
+/* contact */
+.network nav ul {
+  list-style-type: none;
+}
+
+footer {
+  background-color: darkorchid;
+  text-align: center;
+}
+
 /* Responsive styles */
 
 /* small screens/mobile */
@@ -147,26 +220,89 @@ h1 {
   .page-section h2 {
     text-align: center;
   }
+
+
 }
-  /* on medium screens/tablets  */
-  @media only screen and (min-width: 768px) {
 
-    /* navigation styles */
-    .navbar {
-      width: 40%;
-      display: flex;
-      justify-content: space-between;
-      list-style-type: none;
-    }
+.page-section {
+  display: flex;
+}
 
-    /* hero styles */
-    .hero-banner {
-      height: 5.5rem;
-    }
+.page-section h2 {
+  text-align: right;
+  text-decoration: none;
+  padding-right: 1.5rem;
+  width: 20%;
+  border-right: 2px solid black;
+}
 
-    .hero-title {
-      font-size: 2rem;
-      font-weight: 800;
-      padding-right: 2rem;
-    }
+.about-info,
+.portfolio-gallery,
+.network {
+  width: 80%;
+  margin: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* on medium screens/tablets  */
+@media only screen and (min-width: 768px) {
+
+  /* navigation styles */
+  .navbar {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
   }
+
+  /* hero styles */
+  .hero-banner {
+    height: 5.5rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    font-weight: 800;
+    padding-right: 2rem;
+  }
+
+  .row-2 {
+    display: flex;
+  }
+
+  .row-3 {
+    display: flex;
+  }
+
+  .box2 {
+    width: 50%;
+  }
+
+  .box3 {
+    width: 50%;
+  }
+
+  .box4 {
+    width: 50%;
+  }
+
+  .box5 {
+    width: 50%;
+  }
+
+  .about-info,
+  .portfolio-gallery,
+  .network {
+    width: 80%;
+    margin: auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .network nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+  }
+}
