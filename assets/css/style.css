@@ -34,7 +34,7 @@ header {
   background-color: orchid;
 }
 
-.container {
+.row {
   width: 100%;
   padding: 0.5rem;
 }
@@ -53,6 +53,7 @@ h1 {
 
 .navbar ul li a {
   text-decoration: none;
+  color: black;
 }
 
 .navbar ul li a:hover {
@@ -60,11 +61,24 @@ h1 {
   font-weight: 600;
 }
 
+/* Hero-banner styles */
+.hero-banner {
+  background-image: url(../images/02-hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 2.5rem;
+}
+
+.hero-title {
+  color: orangered;
+  font-weight: 600;
+}
+
 /* Responsive styles */
 
 /* small screens/mobile */
 @media only screen and (min-width: 460px) {
-  .container {
+  .row {
     width: 100%;
     padding: 0.5rem;
     display: flex;
@@ -90,14 +104,40 @@ h1 {
     width: 100%;
     justify-content: space-around;
   }
+
+  /* hero styles */
+  .hero-banner {
+    height: 3.5rem;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-align: right;
+    padding-right: 1.5rem;
+  }
+
 }
 
 /* on medium screens/tablets  */
 @media only screen and (min-width: 768px) {
+
+  /* navigation styles */
   .navbar {
     width: 40%;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+  }
+
+  /* hero styles */
+  .hero-banner {
+    height: 5.5rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    font-weight: 800;
+    padding-right: 2rem;
   }
 }
