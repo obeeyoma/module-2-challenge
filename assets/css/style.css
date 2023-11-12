@@ -44,10 +44,14 @@ h1 {
   width: 100%;
 }
 
+.navbar{
+  width: 80%;
+  margin: auto;
+}
 .navbar ul {
 
   margin-top: 0.2rem;
-  padding: 0.5rem;
+  padding: 1rem;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -101,8 +105,7 @@ h1 {
 }
 
 .about-info,
-.portfolio-gallery,
-.network {
+.portfolio-gallery {
   margin: auto;
   padding-left: 0.8rem;
   padding-right: 0.8rem;
@@ -151,9 +154,21 @@ figcaption {
   box-shadow: 4px darkorchid;
 }
 
-/* contact */
-.network nav ul {
+/* contact  styles*/
+
+.contact-menu ul {
+  padding-top: 0.5rem;
   list-style-type: none;
+}
+
+.contact-menu ul li a {
+  text-decoration: none;
+}
+
+.contact-menu a:hover {
+  color: orangered;
+  font-weight: 600;
+
 }
 
 footer {
@@ -166,7 +181,7 @@ footer {
 /* Responsive styles */
 
 /* small screens/mobile */
-@media only screen and (min-width: 468px) {
+@media only screen and (min-width: 576px) {
   .row {
     width: 100%;
     padding: 0.5rem;
@@ -179,7 +194,7 @@ footer {
     width: 60%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     list-style-type: none;
   }
 
@@ -192,7 +207,7 @@ footer {
 
   .navbar ul {
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   /* hero styles */
@@ -220,12 +235,15 @@ footer {
   }
 
   .about-info,
-  .portfolio-gallery,
-  .network {
+  .portfolio-gallery {
     max-width: 80%;
     margin: auto;
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .contact-info {
+    padding-left: 2rem;
   }
 }
 
@@ -233,6 +251,7 @@ footer {
 @media only screen and (min-width: 768px) {
 
   /* navigation styles */
+
   .navbar {
     width: 40%;
     display: flex;
@@ -277,16 +296,17 @@ footer {
 
   .about-info,
   .portfolio-gallery,
-  .network {
+  .contact-info {
     width: 70%;
     margin: auto;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
-  .network nav ul {
+  .contact-menu ul {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: space-between;
+    justify-content: space-between;
   }
+
 }
