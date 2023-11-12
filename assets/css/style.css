@@ -30,6 +30,10 @@ body {
   height: 100%;
 }
 
+.page-wrapper {
+  width: 100%;
+}
+
 header {
   background-color: orchid;
 }
@@ -91,7 +95,7 @@ h1 {
 
 .page-section {
   width: 100%;
-  margin-bottom: 4%
+  margin-bottom: 0;
 }
 
 .page-section img {
@@ -124,6 +128,7 @@ figure {
 
 figure img {
   display: block;
+  transform: scaleX(-1);
 }
 
 .box {
@@ -140,13 +145,14 @@ figure img {
 }
 
 figcaption {
-  width: 50%;
+  width: 10rem;
   position: absolute;
   top: 60%;
   left: 0;
   z-index: 2;
   background-color: aqua;
   padding: 0.2rem;
+  margin-bottom: 0.2rem;
 }
 
 .overlay {
@@ -163,6 +169,10 @@ figcaption {
 }
 
 /* contact  styles*/
+
+.contact-info {
+  padding: 1rem;
+}
 
 .contact-menu ul {
   padding-top: 0.5rem;
@@ -192,7 +202,12 @@ footer {
 /* Responsive styles */
 
 /* small screens/mobile */
-@media only screen and (min-width: 375px) and (max-width:480px) {}
+@media only screen and (min-width: 425px) and (max-width:575px) {
+  .page-wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
 
 
 
@@ -208,10 +223,9 @@ footer {
   }
 
   .navbar {
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
-    background-color: blue;
   }
 
   h1 {
@@ -263,15 +277,48 @@ footer {
     width: 100%;
   }
 
+    figcaption {
+      width: 10rem;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: 2;
+      background-color: aqua;
+      padding: 0.2rem;
+      margin-bottom: 0.5rem;
+    }
   .contact-info {
     /* font-size: 1.2rem; */
     padding-left: 2rem;
   }
 }
 
+
 /* on medium screens/tablets  */
 @media only screen and (min-width: 768px) {
 
+  .about-info {
+    display: flex;
+  }
+
+  .about-info p {
+    padding-right: 1.3rem;
+    width: 50%;
+  }
+  .about-info img{
+    max-width: 100%;
+    transform: scaleX(-1);
+  }
+
+  .box1 figcaption {
+      width: 20rem;
+      position: absolute;
+      top: 90%;
+      left: 0;
+      z-index: 2;
+      background-color: aqua;
+      padding: 0.2rem;
+    }
   /* navigation styles */
 
   .navbar {
@@ -279,7 +326,9 @@ footer {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+                background-color: blue;
   }
+
 
   /* hero styles */
   .hero-banner {
@@ -331,4 +380,7 @@ footer {
     justify-content: space-between;
   }
 
+  .contact-info {
+    font-size: 1.2rem;
+  }
 }
