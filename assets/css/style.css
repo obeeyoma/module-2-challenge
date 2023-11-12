@@ -176,8 +176,9 @@ figcaption {
   font-weight: 600;
 
 }
-
+/* footer styles */
 footer {
+  padding: 1rem;
   background-color: darkorchid;
   text-align: center;
 }
