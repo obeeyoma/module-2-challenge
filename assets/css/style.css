@@ -33,8 +33,12 @@ body {
 header {
   background-color: orchid;
 }
+header a{
+  text-decoration: none;
+}
 
 h1 {
+  color: black;
   font-size: 1.8rem;
   font-variant: small-caps;
   text-align: center;
@@ -78,6 +82,7 @@ h1 {
 .hero-title {
   color: orangered;
   font-weight: 600;
+  text-align: center;
 }
 
 /* page content styles */
@@ -162,6 +167,7 @@ figcaption {
 }
 
 .contact-menu ul li a {
+  color: black;
   text-decoration: none;
 }
 
