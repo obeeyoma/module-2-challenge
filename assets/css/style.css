@@ -123,6 +123,7 @@ h1 {
 /* About section styles */
 .about-info p {
   padding: 0.2rem;
+  font-size: 1.2rem;
 }
 
 .row {
@@ -236,6 +237,7 @@ footer {
   padding: 1rem;
   background-color: var(--primary-color);
   text-align: center;
+  color: var(--accent2-color);
 }
 
 
