@@ -95,7 +95,7 @@ h1 {
 }
 
 .hero-title {
-  color: var(--primary-color);
+  color: var(--accent1-color);
   font-weight: 600;
   text-align: center;
 
