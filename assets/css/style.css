@@ -1,3 +1,4 @@
+/* General styles */
 * {
   margin: 0;
   padding: 0;
@@ -21,9 +22,6 @@ body {
   line-height: 1.5;
 }
 
-
-
-/* Navigation styles */
 html,
 body {
   width: 100%;
@@ -33,6 +31,9 @@ body {
 .page-wrapper {
   width: 100%;
 }
+
+
+/* Navigation styles */
 
 header {
   background-color: orchid;
@@ -47,10 +48,6 @@ h1 {
   font-size: 1.8rem;
   font-variant: small-caps;
   text-align: center;
-}
-
-.row {
-  width: 100%;
 }
 
 .navbar {
@@ -92,7 +89,7 @@ h1 {
 
 }
 
-/* page content styles */
+/* Page content styles */
 
 .page-section {
   width: 100%;
@@ -108,6 +105,16 @@ h1 {
 .page-section h2 {
   text-align: center;
   text-decoration: underline;
+}
+
+
+/* About section styles */
+.about-info p {
+  padding: 0.2rem;
+}
+
+.row {
+  width: 100%;
 }
 
 .about,
@@ -134,21 +141,28 @@ figure {
   position: relative;
 }
 
+.profile {
+  text-align: center;
+}
+
+/* Work section styles */
+
+
 figure img {
   display: block;
 }
 
-.box {
+.portfolio-box {
   margin: 5px;
   height: auto;
   border: 2px solid black;
 }
 
-.box:hover {
+.portfolio-box:hover {
   border: 2px solid orangered;
 }
 
-.box1 {
+.portfolio-box1 {
   height: 25%;
 }
 
@@ -156,7 +170,7 @@ figure img {
   width: 100%;
 }
 
-figcaption {
+.portfolio-box figcaption {
   width: 10rem;
   position: absolute;
   top: 60%;
@@ -167,7 +181,7 @@ figcaption {
   margin-bottom: 0.2rem;
 }
 
-.box1 figcaption {
+.portfolio-box1 figcaption {
   top: 80%;
 }
 
@@ -183,7 +197,7 @@ figcaption {
   opacity: 0;
 }
 
-/* contact  styles*/
+/* Contact section styles*/
 
 .contact-info {
   padding: 1rem;
@@ -205,7 +219,7 @@ figcaption {
 
 }
 
-/* footer styles */
+/* Footer styles */
 footer {
   padding: 1rem;
   background-color: orchid;
@@ -225,8 +239,9 @@ footer {
 }
 
 
-
+/* small screens/mobile */
 @media only screen and (min-width: 576px) {
+
   .row {
     width: 100%;
     padding: 0.5rem;
@@ -254,8 +269,6 @@ footer {
     justify-content: space-between;
   }
 
-
-  /* hero styles */
   .hero-banner {
     height: 3.5rem;
   }
@@ -287,14 +300,16 @@ footer {
     padding-right: 2rem;
   }
 
-  .box1 {
+  .portfolio-box figcaption {
+    top: 50%;
+  }
+
+  .portfolio-box1 {
     width: 100%;
   }
 
-  figcaption {
-    top: 50%;
-    padding: 0.2rem;
-    margin-bottom: 0.5rem;
+  .portfolio-box1 figcaption {
+    top: 90%;
   }
 
   .contact-info {
@@ -320,13 +335,11 @@ footer {
     transform: scaleX(-1);
   }
 
-  .box1 figcaption {
-    width: 20rem;
+  .portfolio-box1 figcaption {
+    width: 10rem;
     top: 90%;
-    padding: 0.2rem;
+    margin-bottom: 0.2rem;
   }
-
-  /* navigation styles */
 
   .navbar {
     width: 40%;
@@ -340,7 +353,6 @@ footer {
     justify-content: space-between;
   }
 
-  /* hero styles */
   .hero-banner {
     height: 5.5rem;
   }
@@ -359,19 +371,19 @@ footer {
     display: flex;
   }
 
-  .box2 {
+  .portfolio-box2 {
     width: 50%;
   }
 
-  .box3 {
+  .portfolio-box3 {
     width: 50%;
   }
 
-  .box4 {
+  .portfolio-box4 {
     width: 50%;
   }
 
-  .box5 {
+  .portfolio-box5 {
     width: 50%;
   }
 
