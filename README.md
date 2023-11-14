@@ -1,4 +1,4 @@
-# Obioma's Portfolio Page
+# Obioma's Portfolio
 A project to develop a responsive webpage using web layout models and media queries.
 
 ## Description
@@ -6,7 +6,7 @@ Obioma's Portfolio Page is developed using the Flexbox web layout and media quer
 
 
 ## Screenshot
-![Obioma's Portfolio Page](assets/images/screenshot-of-portfolio-page.png)
+![Obioma's Portfolio](assets/images/screenshot-of-portfolio-page.png)
 
 ## Link to website
-[Obioma's Portfolio Page](https://obeeyoma.github.io/horiseon-code-refactor-challenge/)
+[Obioma's Portfolio](https://obeeyoma.github.io/obioma-portfolio/)
