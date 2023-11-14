@@ -82,8 +82,7 @@ h1 {
 }
 
 .navbar ul li a:hover {
-  color: var(--accent1-color);
-  font-weight: 600;
+  border-bottom: 3px solid var(--accent1-color);
 }
 
 /* Hero-banner styles */
@@ -228,8 +227,7 @@ figure img {
 }
 
 .contact-menu a:hover {
-  color: var(--primary-color);
-  font-weight: 600;
+border-bottom: 3px solid var(--accent1-color);
 
 }
 
